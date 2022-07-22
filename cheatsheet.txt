@@ -1,0 +1,4 @@
+wget "https://github.com/teddyking/netsetgo/releases/download/0.0.1/netsetgo"
+sudo mv netsetgo /usr/local/bin/
+sudo chown root:root /usr/local/bin/netsetgo
+sudo chmod 4755 /usr/local/bin/netsetgo
