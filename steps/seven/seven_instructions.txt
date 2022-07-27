@@ -1,0 +1,13 @@
+Instructions [SEVEN]
+
+1) Find the ip address for your system
+   >ifconfig 
+
+2) >./seven_network parent /bin/sh
+
+3) Find the container ip
+   >ifconfig
+
+4) Open another terminal and ping the container ip
+
+5) Ping the system ip from the container

@@ -1,0 +1,20 @@
+Instructions [FIVE]
+
+1) >ls
+
+2) >go build five_root.go
+
+3) >sudo su
+
+4) >./five_root parent /bin/sh
+
+5) >ls
+
+6) >hostname
+
+7) >id
+
+8) >ps 
+Nothing to show here because we need the proc file system
+
+6) exit

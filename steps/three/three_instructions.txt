@@ -1,0 +1,17 @@
+Instructions [THREE]
+
+1) >ls -li /proc/self/ns/ total 0
+
+1.1) >whoami
+
+2) >go build three_myuts_namespaces_root.go
+
+3) >sudo su
+
+4) >./three_myuts_namespaces_root
+
+5) >ls -li /proc/self/ns/ total
+
+5.1) >whoami
+
+6) >exit

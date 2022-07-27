@@ -1,0 +1,47 @@
+Instructions [EIGHT]
+
+Preparation
+
+1) >nano /etc/default/grub 
+
+2) Modify the file contents
+
+   GRUB_CMDLINE_LINUX_DEFAULT="quite splash systemd.unified_cgroup_hierarchy=1"
+
+3) Save file
+
+4) >sudo update-grub
+
+5) Reboot system 
+
+6) After the system starts run
+   >cat /proc/cmdline
+
+   You should see: 
+   BOOT_IMAGE=[some stuff here]systemd.unified_cgroup_hierarchy=1
+
+7) Create a cgroup 
+
+   >mkdir -p /root/mygrp
+   >mount -t cgroup2 none /root/mygrp
+   >mkdir -p /root/mygrp/child
+
+Execution of program
+
+1) ./eight_cgroup parent /bin/sh
+
+2) Open another terminal
+
+3) ps -ef | grep "/bin/sh"
+
+4) Go to /root/mygrp (was created during preparation)
+
+5) >ls (you will see cgroups)
+
+6) >cd child
+
+7) >ls (you will see cgroups)
+
+8) cat cgroup.procs
+
+9) cat memory.max

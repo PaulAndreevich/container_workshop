@@ -1,0 +1,13 @@
+Instructions [FOUR]
+
+1) >hostname
+
+2) >go build four_shell.go
+
+3) >sudo su
+
+4) >./four_shell parent /bin/bash 
+
+5) >hostname
+
+6) exit

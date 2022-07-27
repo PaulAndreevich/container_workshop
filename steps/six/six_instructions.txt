@@ -1,0 +1,16 @@
+Instructions [SIX]
+
+1) >ls
+
+2) >go build six_proc_fs.go
+
+3) >sudo su
+
+4) >./six_proc_fs parent /bin/sh
+
+5) >ps
+
+6) exit
+
+To check for processes in the running container open another terminal window.
+>ps -ef | grep /bin/sh

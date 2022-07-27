@@ -1,0 +1,13 @@
+Instructions [ONE]
+
+1) >ls -li /proc/self/ns/uts
+
+2) >go build one_myuts_basic.go
+
+3) >sudo su
+
+4) >./one_myuts_basic
+
+5) >ls -li /proc/self/ns/uts
+
+6) >exit

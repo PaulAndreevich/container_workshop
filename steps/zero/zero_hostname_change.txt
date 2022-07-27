@@ -1,0 +1,17 @@
+change hostname 
+1) >hostname
+output: hostname of your system
+
+2) >unshare -u /bin/bash
+
+3) >hostname test
+
+4) >hostname 
+output: test
+5) >exit
+
+6) >hostname
+output: hostname of your system
+
+
+

@@ -1,0 +1,14 @@
+Instructions [TWO]
+
+1) >ls -li /proc/self/ns/ total 0
+
+2) >go build one_myuts_namespaces_nobody.go
+
+3) >sudo su
+
+4) >./one_myuts_namespaces_nobody
+
+5) >ls -li /proc/self/ns/ total
+
+6) >exit
+
